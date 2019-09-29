@@ -1,11 +1,38 @@
 .myOrangeButton, .myBlueButton, .myOrangeButton2 {
   border-radius: 7px;
-  border: 3px solid #ffffff;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-size: 24px;
   text-decoration: none;
+}
+
+.myBlueButton, .myOrangeButton2 {
+  width: 210px;
+  padding: 18px 0;
+}
+
+.top-li a, .bottom-li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.top-ul, .bottom-ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.slogan-top, .slogan-bottom {
+  height: 30px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 body {
@@ -18,11 +45,8 @@ body {
 
 /* styling nav bar */
 .top-ul {
-  list-style-type: none;
   margin: 0;
   padding: 0 11%;
-  overflow: hidden;
-  background-color: #333333;
 }
 
 .top-li {
@@ -30,16 +54,12 @@ body {
 }
 
 .top-li a {
-  display: block;
-  color: white;
   font-size: 13px;
-  text-align: center;
   padding: 14px 12px;
-  text-decoration: none;
 }
 
 .top-li a:hover {
-  background-color: #222;
+  background-color: #242424;
 }
 
 .top-li:last-child {
@@ -60,15 +80,7 @@ body {
 .hero-div div {
   float: left;
   margin: auto;
-  text-align: center;
-}
-
-.hero-div button {
-  float: left;
-}
-
-.hero-div div figure {
-  margin-left: 170px;
+  margin-left: 130px;
 }
 
 .hero-div div figure figcaption {
@@ -79,20 +91,13 @@ body {
 
 .myOrangeButton {
   background-color: #e99002;
+  border: 3px solid #ffffff;
   padding: 16px 14px;
-  margin-left: 140px;
   margin-top: 30px;
 }
 
 .myOrangeButton:hover {
-  background-color: #835100;
-}
-
-.slogan-top {
-  height: 30px;
-  margin-bottom: 15px;
-  font-size: 24px;
-  text-align: center;
+  background-color: #a36501;
 }
 
 /* Styling second section of body */
@@ -116,7 +121,6 @@ body {
 
 .text {
   color: white;
-  text-align: justify;
   width: 95%;
 }
 
@@ -126,10 +130,6 @@ body {
 }
 
 .slogan-bottom {
-  height: 30px;
-  margin-bottom: 15px;
-  font-size: 24px;
-  text-align: center;
   color: #6f6f6f;
 }
 
@@ -142,7 +142,6 @@ body {
 
 .first-row,
 .second-row {
-  text-align: center;
   margin-top: 2%;
   padding-bottom: 2%;
 }
@@ -161,17 +160,8 @@ body {
 
 /* Styling the three action buttons */
 .buttons {
-  text-align: center;
   margin-top: 4%;
   margin-bottom: 9%;
-}
-
-.RestButton {
-  padding: 16px 33px;
-}
-
-.DocButton {
-  padding: 16px 53px;
 }
 
 .myBlueButton {
@@ -179,24 +169,20 @@ body {
 }
 
 .myBlueButton:hover {
-  background-color: #217cb4;
+  background-color: #0f3e5b;
 }
 
 .myOrangeButton2 {
   background-color: #e99002;
-  padding: 16px 14px;
 }
 
 .myOrangeButton2:hover {
-  background-color: #835100;
+  background-color: #a36501;
 }
 
 /* Styling Footer */
 .bottom-ul {
-  list-style-type: none;
   padding-left: 10px;
-  overflow: hidden;
-  background-color: #333333;
   padding-top: 14px;
   margin-bottom: 0;
 }
@@ -207,23 +193,13 @@ body {
 }
 
 .bottom-li a {
-  display: block;
-  color: white;
   font-size: 14px;
-  text-align: center;
-  /* padding: 14px 12px 24px; */
-  text-decoration: none;
   margin-left: 7px;
   margin-right: 7px;
 }
 
-.bottom-li a:hover {
-  background-color: #222;
-}
-
 .bottom-li:last-child {
   float: right;
-  /* display: block; */
   color: white;
   font-size: 13px;
   text-align: right;

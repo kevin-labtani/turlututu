@@ -1,3 +1,7 @@
+$light-blue: #1e93cc;
+$orange: #e99002;
+$dark-background: #333;
+
 @import "utilities";
 
 body {
@@ -9,26 +13,21 @@ body {
 /* styling nav bar */
 
 .top-ul {
-  list-style-type: none;
+  @extend %ul-shared;
   margin: 0;
   padding: 0 11%;
-  overflow: hidden;
-  background-color: #333333;
 }
 
 .top-li {
   float: left;
 
   a {
-    display: block;
-    color: white;
+    @extend %a-shared;
     font-size: 13px;
-    text-align: center;
     padding: 14px 12px;
-    text-decoration: none;
 
     &:hover {
-      background-color: #222;
+      background-color: scale-color($dark-background, $lightness: -30%);
     }
   }
 
@@ -39,7 +38,7 @@ body {
 
 /* Styling first section of body */
 .hero-div {
-  background-color: #1e93cc;
+  background-color: $light-blue;
   height: 260px;
   padding: 1.8% 11%;
 
@@ -50,15 +49,7 @@ body {
   div {
     float: left;
     margin: auto;
-    text-align: center;
-  }
-
-  button {
-    float: left;
-  }
-
-  div figure {
-    margin-left: 170px;
+    margin-left: 130px;
   }
 
   div figure figcaption {
@@ -70,26 +61,23 @@ body {
 
 .myOrangeButton {
   @extend %btn-shared;
-  background-color: #e99002;
+  background-color: $orange;
+  border: 3px solid #ffffff;
   padding: 16px 14px;
-  margin-left: 140px;
   margin-top: 30px;
 
   &:hover {
-    background-color: #835100;
+    background-color: scale-color($orange, $lightness: -30%);
   }
 }
 
 .slogan-top {
-  height: 30px;
-  margin-bottom: 15px;
-  font-size: 24px;
-  text-align: center;
+  @extend %slogan-shared;
 }
 /* Styling second section of body */
 
 .advantages {
-  background-color: #1e93cc;
+  background-color: $light-blue;
   height: auto;
   padding: 2% 10%;
 }
@@ -107,7 +95,6 @@ body {
 
 .text {
   color: white;
-  text-align: justify;
   width: 95%;
 }
 
@@ -116,10 +103,7 @@ body {
   float: left;
 }
 .slogan-bottom {
-  height: 30px;
-  margin-bottom: 15px;
-  font-size: 24px;
-  text-align: center;
+  @extend %slogan-shared;
   color: #6f6f6f;
 }
 /* Styling the customer logos section */
@@ -132,7 +116,6 @@ body {
 
 .first-row,
 .second-row {
-  text-align: center;
   margin-top: 2%;
   padding-bottom: 2%;
 }
@@ -151,45 +134,35 @@ body {
 /* Styling the three action buttons */
 
 .buttons {
-  text-align: center;
   margin-top: 4%;
   margin-bottom: 9%;
 }
 
-.RestButton {
-  padding: 16px 33px;
-}
-
-.DocButton {
-  padding: 16px 53px;
-}
-
 .myBlueButton {
   @extend %btn-shared;
+  @extend %btn-std-size;
   background-color: #165882;
 
   &:hover {
-    background-color: #217cb4;
+    background-color: scale-color(#165882, $lightness: -30%);
   }
 }
 
 .myOrangeButton2 {
   @extend %btn-shared;
-  background-color: #e99002;
-  padding: 16px 14px;
+  @extend %btn-std-size;
+  background-color: $orange;
 
   &:hover {
-    background-color: #835100;
+    background-color: scale-color($orange, $lightness: -30%);
   }
 }
 
 /* Styling Footer */
 
 .bottom-ul {
-  list-style-type: none;
+  @extend %ul-shared;
   padding-left: 10px;
-  overflow: hidden;
-  background-color: #333333;
   padding-top: 14px;
   margin-bottom: 0;
 }
@@ -199,23 +172,14 @@ body {
   border-right: 1px dotted #999;
 
   a {
-    display: block;
-    color: white;
+    @extend %a-shared;
     font-size: 14px;
-    text-align: center;
-    /* padding: 14px 12px 24px; */
-    text-decoration: none;
     margin-left: 7px;
     margin-right: 7px;
-
-    &:hover {
-      background-color: #222;
-    }
   }
 
   &:last-child {
     float: right;
-    /* display: block; */
     color: white;
     font-size: 13px;
     text-align: right;
